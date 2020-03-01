@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <li v-for="(item,index) in userList" :key="item.user.uname">
+            {{index}} -- {{item.user.uname}}
+        </li>
+    </ul>
+</div>
+</body>
+<script src="vue.min.js"></script>
+<script>
+    var VM = new Vue({
+        el: "#app",
+        data: {
+            userList: [
+                {user: {uname: "11", uage: 1}},
+                {user: {uname: "22", uage: 2}}
+            ]
+        }
+    })
+</script>
+</html>

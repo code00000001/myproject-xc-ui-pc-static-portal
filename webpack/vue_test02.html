@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>vue测试程序</title>
+</head>
+<body>
+<div id="app">
+    <!--{{name}}-->
+    <!-- v-text解决网速慢，先显示出来插值表达式的问题 -->
+    <span v-text="name"></span>
+    <input v-model="num1">+
+    <input v-model="num2">=
+    <!--{{Number.parseInt(num1)+Number.parseInt(num2)}}-->
+    <span v-text="result"></span>
+    <button v-on:click="change">计算</button>
+    <br>
+    -----------------------------------------
+    <br>
+    <a v-bind:href="url">黑马程序员</a>
+</div>
+</body>
+<script src="build.js"></script>
+<script>
+
+</script>
+</html>
